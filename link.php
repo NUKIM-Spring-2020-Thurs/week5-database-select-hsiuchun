@@ -15,7 +15,7 @@
         echo "<table cellpadding=10 style='text-align:center;'>";
         echo "<tr style='font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;'>";
         while($fieldname = mysqli_fetch_field($result)){ 
-            echo "<th bgcolor='#78c0a8'><b>".$fieldname->name."</b></th>"; 
+            echo "<th bgcolor='#78c0a8'>".$fieldname->name."</th>"; 
         }
         "</tr>";
         while( $row = mysqli_fetch_assoc($result) ){ 
